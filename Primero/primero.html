@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Markazi+Text&display=swap" rel="stylesheet">
+    <title>Login</title>
+</head>
+<body>
+   <div class="login">
+        <div class="login__container">
+
+            <input type="radio" name="toggle" id="login-toggle" checked>
+            <input type="radio" name="toggle" id="register-toggle">
+
+            <div class="login__text">
+                <label for="login-toggle" class="login-button">Iniciar Sesión</label>
+                <label for="register-toggle" class="register-button">Registrarse</label>
+            </div>
+
+            <div class=login__login>
+
+            <form class="login__form">
+                <div class="login__input">
+                    <h3 class="login__input--text">Usuario</h3>
+                    <input class="login__input--in" type="text">
+                </div>
+                <div class="login__input">
+                    <h3 class="login__input--text">Contraseña</h3>
+                    <input class="login__input--in" type="password">
+                </div>
+            </form>
+
+            <div class="login__rec">
+                <input type="checkbox" id="chkbx">
+                <label class="login__rec--checkbox" for="chkbx"> 
+                    <div class="fk__check">
+                        <img class="check" src="./check.svg" alt="checkbox">
+                    </div> 
+                    Mantener sesión iniciada
+                </label>
+                <a href="./">Olvidé mi contraseña</a>
+            </div>
+
+            <button class="button">Inciar sesión</button>
+
+            </div>
+
+            <div class="login__register">
+
+                <form class="login__form">
+                    <div class="login__input">
+                        <h3 class="login__input--text">Correo</h3>
+                        <input class="login__input--in" type="email">
+                    </div>
+                    <div class="login__input">
+                        <h3 class="login__input--text">Usuario</h3>
+                        <input class="login__input--in" type="text">
+                    </div>
+                    <div class="login__input">
+                        <h3 class="login__input--text">Contraseña</h3>
+                        <input class="login__input--in" type="password">
+                    </div>
+
+
+                </form>
+
+                <button class="button">Registrarse</button>
+
+            </div>
+
+            
+        </div>
+   </div>
+</body>
+</html>

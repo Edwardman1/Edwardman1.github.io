@@ -1,0 +1,223 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(70deg, #1B799E, #54A27C);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 200px);
+}
+
+.login__container {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#chkbx {
+  display: none;
+}
+
+.login__header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  margin-bottom: 2vh;
+  cursor: default;
+}
+
+.login__header--logo {
+  width: 50px;
+}
+
+.login__header--text {
+  font-family: "Neucha", cursive;
+  font-size: 45px;
+  padding: 0vh 2vh;
+  text-shadow: 0px 2px rgba(0, 0, 0, 0.2);
+}
+
+.login__header--desc {
+  font-family: "Spartan", sans-serif;
+  font-size: 40px;
+  margin-top: 7px;
+  text-shadow: 0px 2px rgba(0, 0, 0, 0.2);
+}
+
+.hr {
+  width: 100%;
+  border: none;
+  box-shadow: 0px 1px rgba(255, 255, 255, 0.2);
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  margin: 3vh 0vh;
+  width: 100%;
+}
+.login__form input {
+  width: auto;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  border-top-width: 2px;
+  border-color: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  margin: 14px 0px;
+  padding-left: 10px;
+  font-size: 20px;
+  color: white;
+  font-family: "Assistant", sans-serif;
+  font-weight: 600;
+  box-shadow: 0px 0.5px rgba(255, 255, 255, 0.3);
+}
+.login__form input:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px white;
+  border: 2px solid white;
+}
+
+.login__form--email::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Assistant", sans-serif;
+}
+
+.login__form--password::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Assistant", sans-serif;
+}
+
+.login__form--opt {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2vh 0vh;
+  font-size: 16px;
+}
+
+.login__form--remb {
+  font-family: "Assistant", sans-serif;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+
+.fk-checkbox {
+  height: 18px;
+  width: 18px;
+  background-color: #5bcebb;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 6px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.login__checkbox--checked {
+  height: 14px;
+  width: 14px;
+  display: none;
+}
+
+#chkbx:checked ~ * .login__checkbox--checked {
+  display: block;
+}
+
+.login__form--forgot {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-family: "Assistant", sans-serif;
+  font-weight: bold;
+}
+
+.login__form--forgot:hover {
+  text-decoration: underline;
+}
+
+.login__form--button {
+  height: 45px;
+  width: auto;
+  margin-top: 1vh;
+  border-radius: 3px;
+  border: none;
+  border-bottom: 2.5px solid rgba(0, 0, 0, 0.15);
+  border-left: 2.5px solid rgba(0, 0, 0, 0.15);
+  background-color: #d6e6e5;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+  font-family: "Assistant", sans-serif;
+  color: black;
+  font-size: 20px;
+  font-weight: bolder;
+  outline: none;
+}
+
+.login__form--button:focus {
+  border: none;
+}
+
+.login__buttons {
+  margin: 4vh 0vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.login__buttons--b {
+  width: 150px;
+  height: 45px;
+  border-radius: 3px;
+  border: none;
+  background-color: #5bcebb;
+  border-bottom: 2.5px solid rgba(0, 0, 0, 0.15);
+  border-left: 2.5px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+  font-family: "Assistant", sans-serif;
+  font-weight: bold;
+  color: black;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.login__buttons--b:focus {
+  border: none;
+}
+
+.footer {
+  height: 11vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__text {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 13px;
+}
+
+/*# sourceMappingURL=styles.css.map */

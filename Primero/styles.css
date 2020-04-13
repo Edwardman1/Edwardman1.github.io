@@ -1,0 +1,231 @@
+body {
+  margin: 0px;
+  font-family: "Markazi Text", serif;
+  color: white;
+  font-weight: lighter;
+  letter-spacing: 0.2px;
+}
+
+.login {
+  height: 100vh;
+  width: auto;
+  background-image: linear-gradient(100deg, #F0FCB0, #A7FF8F);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__container {
+  background-image: url(./landscape.jpg);
+  background-size: cover;
+  border: 1px transparent;
+  border-radius: 5px;
+  width: 50%;
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 12px 8px 20px 10px rgba(0, 0, 0, 0.3);
+}
+
+#login-toggle {
+  display: none;
+}
+
+#register-toggle {
+  display: none;
+}
+
+.login__text {
+  width: calc(100% - 20vw);
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.login-button {
+  font-size: 25px;
+  padding: 0px;
+  margin: 0px;
+  font-weight: bold;
+}
+
+.login-button:hover {
+  border-bottom: 4px solid #f72847;
+}
+
+.register-button {
+  font-size: 25px;
+  padding: 0px;
+  margin: 0px;
+  font-weight: bold;
+}
+
+.register-button:hover {
+  border-bottom: 4px solid #f72847;
+}
+
+.login__login {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.login__register {
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  visibility: hidden;
+}
+
+#register-toggle:checked ~ .login__login {
+  visibility: collapse;
+  display: none;
+}
+
+#register-toggle:checked ~ .login__register {
+  visibility: visible;
+  display: flex;
+}
+
+#register-toggle:checked ~ * .login-button {
+  border-bottom: none;
+}
+
+#register-toggle:checked ~ * .register-button {
+  border-bottom: 4px solid #f72847;
+}
+
+#login-toggle:checked ~ .login__register {
+  visibility: collapse;
+  display: none;
+}
+
+#login-toggle:checked ~ .login__login {
+  visibility: visible;
+  display: flex;
+}
+
+#login-toggle:checked ~ * .login-button {
+  border-bottom: 4px solid #f72847;
+}
+
+#login-toggle:checked ~ * .register-button {
+  border-bottom: none;
+}
+
+.login__form {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__input {
+  margin: 20px 0px;
+  width: 100%;
+}
+
+.login__input--text {
+  font-size: 20px;
+  margin: 2px 20px;
+  font-weight: lighter;
+}
+
+.login__input--in {
+  font-family: "Markazi Text", serif;
+  background-color: rgba(255, 255, 255, 0.4);
+  outline: none;
+  border: none;
+  height: 40px;
+  width: 100%;
+  color: white;
+  font-size: 25px;
+  border-radius: 50px;
+  padding-left: 20px;
+}
+
+::placeholder {
+  color: white;
+  font-family: "Markazi Text", serif;
+}
+
+.login__rec {
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+.login__rec a {
+  font-size: 20px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+.login__rec a:hover {
+  text-decoration: underline;
+}
+.login__rec label {
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+#chkbx {
+  display: none;
+}
+
+.fk__check {
+  width: 18px;
+  height: 18px;
+  background-color: #f72847;
+  margin-right: 5px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check {
+  width: 14px;
+  height: 14px;
+  object-fit: cover;
+  display: none;
+}
+
+#chkbx:checked ~ * .check {
+  display: block;
+}
+
+.button {
+  background-color: #f72847;
+  border: none;
+  outline: none;
+  height: 40px;
+  width: 73%;
+  border-radius: 50px;
+  color: white;
+  font-family: "Markazi Text", serif;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 40px 0px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .login__container {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    width: 100%;
+    box-shadow: none;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

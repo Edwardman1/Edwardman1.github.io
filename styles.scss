@@ -1,0 +1,343 @@
+$dark-theme-text: #CCCCCC;
+$light-theme-text: #222;
+
+// font-family: 'Playball', cursive;  EDWARD
+// font-family: 'Bungee', cursive;    HTML & CSS
+// font-family: 'Open Sans', sans-serif;  TEXTOS
+
+
+
+body {
+
+    background-image: linear-gradient(15deg, #292a2d, rgb(45, 47, 48));
+    color: $dark-theme-text;
+    //background-image: linear-gradient(15deg, #FFFFFF, #CCCCCC);
+    //color: $light-theme-text;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+input {
+
+        display: none;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    height: 4.0625rem;
+    justify-content: space-around;
+    box-shadow: 0px 1px 4px rgba($color: #fff, $alpha: 0.1);
+    
+}
+
+.header__text {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+
+.header__text--first {
+
+    font-size: 1.25rem;
+    font-family: 'Bungee', cursive;
+    margin-bottom: -10px;
+    margin-top: -10px;
+    text-shadow: 0px 1px rgba($color: #fff, $alpha: 0.2);
+
+}
+
+.header__text--second {
+
+    font-family: 'Playball', cursive;
+    font-size: 0.8125rem;
+    text-shadow: 0px 1px rgba($color: #fff, $alpha: 0.2);
+
+}
+
+.header__options {
+
+    display: flex;
+    justify-content: center;
+    margin-left: 2.5rem;
+    width: 31.25rem;
+
+}
+
+.buttons {
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    label {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        max-width: 200px;
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.25rem;
+            text-align: center;
+            border-left: 3px solid rgba($color: $dark-theme-text, $alpha: 0.2);
+            border-right: 3px solid rgba($color: $dark-theme-text, $alpha: 0.2);
+            margin-right: -3px;
+            border-radius: 6px;
+        }
+
+
+        div:hover {
+
+            animation: buttonhover 4s;
+            animation-iteration-count: infinite;
+        }
+    }
+
+}
+
+@keyframes buttonhover {
+
+    0% {background-color: none;}
+    50% {background-color: $dark-theme-text; border-color: rgba($color: $dark-theme-text, $alpha: 0.2); color: $light-theme-text;}
+    100% {background-color: none;}
+}
+
+@keyframes scale {
+
+    to {transform: scale(1.5);}
+}
+
+
+.header__colortheme img {
+
+    display: none;
+}
+
+.section__proyects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 79.6vh;
+    display: none;
+
+}
+
+.proyects__title {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.1875rem;
+    margin: 10px 0px 0px 0px;
+
+}
+
+.thegrid {
+    width: 100vw;
+    height: 97%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.proyects__grid {
+    display: flex;
+    height: 77%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 1.25rem 0px;
+
+}
+
+.grid--1 {
+
+    grid-column-start: 1 ;
+    grid-row-start: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+    a {
+
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+
+    }
+
+}
+
+.element--1 {
+    width: 100%;
+    height: 100%;
+    background-image: url(./indexresources/Platzivideo.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    border-radius: 10px;
+    margin-right: -10rem;
+}
+
+
+.element--1:hover {
+
+    animation: scale 1.5s;
+    animation-fill-mode: forwards;
+
+}
+
+.grid--2 {
+
+    grid-column-start: 2;
+    grid-row-start: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.element--2 {
+
+    width: 50%;
+    height: 100%;
+    background-image: url(./indexresources/primerlogin.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    border-radius: 10px;
+    margin-right: 10rem;
+
+}
+
+.element--2:hover {
+
+    animation: scale 1.5s;
+    animation-fill-mode: forwards;
+
+}
+
+.grid--3 {
+
+    grid-column-start: 1;
+    grid-row-start: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.element--3 {
+
+    width: 50%;
+    height: 100%;
+    background-image: url(./indexresources/segundologin.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    border-radius: 10px;
+    margin-left: 10rem;
+
+}
+
+.element--3:hover {
+
+    animation: scale 1.5s;
+    animation-fill-mode: forwards;
+
+}
+
+.grid--4 {
+
+    grid-column-start: 2;
+    grid-row-start: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.element--4 {
+
+    width: 50%;
+    height: 100%;
+    background-image: url(./indexresources/segundologin.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    border-radius: 10px;
+    margin-right: 10rem;
+
+
+}
+
+.element--4:hover {
+
+    animation: scale 1.5s;
+    animation-fill-mode: forwards;
+
+}
+
+
+
+.section__aboutme {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 79.6vh;
+    display: none;
+}
+
+#proyects__toggle:checked ~ * .button__proyects-b {
+
+    background-color: rgba($color: $dark-theme-text, $alpha: 1);
+    color: $light-theme-text;
+    
+}
+
+#proyects__toggle:checked ~ .section__proyects {
+
+    display: block;
+}
+
+
+#aboutme__toggle:checked ~ * .button__aboutme-b {
+
+    background-color: rgba($color: $dark-theme-text, $alpha: 1);
+    color: $light-theme-text;
+    
+}
+
+#aboutme__toggle:checked ~ .section__aboutme {
+
+    display: block;
+}
